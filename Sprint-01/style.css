@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    background: silver;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: red;
+}
+/*Logo de Alura */
+.logo{
+    position: absolute;
+    left: 30px;
+    right: 37%;
+    top:25px;
+    bottom:0%;
+    background: silver;
+}
+
+/*textarea donde el usuario debe escribir el texto que desea encriptar*/
+.input-text{
+    text-transform:lowercase;
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    left: 15%;
+    top: 168px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    justify-content: baseline;
+    resize: none;
+    color: #0A3871;
+    background: transparent;
+    border: none;
+}
+
+.input-text:focus { 
+    border: none;
+    outline: none;
+}
+
+::placeholder { color: #0A3871; }
+
+/* Div de la frase de alerta */
+.div-form-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: auto;
+    height:  18px;
+    left:  13%;
+    top: 631px;
+}
+
+/*imagen signo de explamacion*/
+.alerta{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+}
+
+.label-div-form-group{
+    position: static;
+    width: auto;
+    height: 18px;
+    left: 24px;
+    top: 0px;
+    padding-left: 25px;
+    font-weight: 600;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 100%;
+    color: black;
+}
+
+/*div de los botones encriptar y desencriptar*/
+.div-botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 12%;
+    top: 665px; 
+    background: silver;
+}
+
+.encriptar-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    position: static;
+    width: 328;
+    height: 67px;
+    left: 0px;
+    top: 0px;
+    background: #1c918f;
+    border: 3px solid rgb(10, 10, 10);
+    border-radius: 23px;
+    /*Inside auto Layout (contenido dentro del boton)*/
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 24px;
+    color: #ffffff;
+    font-style: oblique;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 19px;
+    justify-content: center; 
+}
+
+.encriptar-btn:hover{
+    background: black;
+}
+
+
+.desencriptar-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    position: static;
+    width: 328;
+    height: 67px;
+    left: 350px;
+    top: 0px;
+    background: #0d504e;
+    border: 3px solid rgb(10, 10, 10);
+    box-sizing: border-box;
+    border-radius: 23px;
+    /*Inside auto Layout (contenido dentro del boton)*/
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 24px;
+    color: #ffffff;
+    font-style: oblique;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 19px;
+    justify-content: center; 
+}
+
+.desencriptar-btn:hover{
+    background: black;
+}
+
+/*Section donde se encuentra el muñeco*/
+.section-secundario{
+    position: absolute;
+    width: 400px;
+    height: 720px;
+    left: 70%;
+    top: 20px;
+    padding-left: 20px;
+    padding-top: 80px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+
+}
+
+.div-section-secundario, .div-section-secundario img {
+    padding: 5px;
+    background: #ffffff;
+}
+
+/*formato del h2 que contiene el texto ningun mensaje...*/
+.h2-ningunmensaje-div-section-secundario{
+    position: static;
+    width: 336px;
+    height: 58px;
+    left: 0px;
+    top: 0px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 120%;
+    text-align: center;
+    color: black;
+    background: #ffffff;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+/*formato del h2 que dice ingresa el texto...*/
+.h2-ingresatexto-div-section-secundario{
+    position: static;
+    width: 336px;
+    height: 48px;
+    left: 0px;
+    top: 74px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    background: #FFFFFF;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+/*textarea donde aparecera el texto despues de ser encriptado*/
+.mensaje-div{
+    position: absolute;
+    width: 300px;
+    height: 700px;
+    left: 40px;
+    top: 32px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 150%;
+    resize: none;
+    color: #495057;
+    border:none;
+    background:transparent;
+  
+}
+.mensaje-div:focus{
+    border: none;
+    outline: none;
+}
+
+/*boton copiar cuya funcion es copiar el texto que fue encriptado */
+.copiar-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    position: absolute;
+    width: 336px;
+    height: 67px;
+    left: 25px;
+    top: 640px;
+    border: 1px solid #0A3871;
+    box-sizing: border-box;
+    border-radius: 24px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 0px 8px;
+    justify-content: center;
+}
+
+/*pie de pagina*/
+footer{
+    position: absolute;
+    top: 760px;
+    width: 100%;
+    border: #1c918f;
+    border-style: double;
+    border-width: 4px;
+    font-style: normal;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    color: blue;
+    
+}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com"  crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npmbootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <main class="main">
+            <img src="imagenes/logo.png"  class="logo" onclick="home()">
+        <section class="sect-principal">
+            <form action="">
+                <textarea class="input-text" type="text" name="text-input" maxlength="333" id="text-input" placeholder="Ingrese aqui el texto que desea encriptar porfavor"></textarea>
+                <div class="div-form-group">
+                    <img src="imagenes/!.png" class="alerta">
+                    <label class= "label-div-form-group" for="text-input">Solo letras minusculas y sin acentos.</label>
+                </div>
+                <div class="div-botones">
+                    <input class="encriptar-btn" type="submit" value="ENCRIPTAR" id="encriptar-btn">
+                    <input class="desencriptar-btn" type="submit" value="DESENCRIPTAR" id="desencriptar-btn">
+                </div>
+            </form>     
+        </section>
+        <section class="section-secundario">
+            <div id="desaparece-div" class="div-section-secundario">
+                <img src="imagenes/muñeco.svg">
+                <h2 class="h2-ningunmensaje-div-section-secundario">Ningun mensaje fue encontrado.</h2>
+                <h2 class="h2-ingresatexto-div-section-secundario">Ingresa el texto que desees encriptar o desencriptar.</h2> 
+            </div>
+            <div id="aparece-div">
+                <textarea class="mensaje-div" type="text" id="mensaje" placeholder="Su mensaje encriptado aparecera aqui"></textarea>
+                <input class="copiar-btn" type="submit" value="COPIAR" id="copiar-btn">
+            </div>
+        </section>       
+    </main>
+    <script src="sprint1.js"></script>
+</body>
+<footer>
+    <p>ESTA PAGINA FUE DISEÑADA POR MATÍAS LEVALLOIS</p>
+</footer>
+
+</html>
